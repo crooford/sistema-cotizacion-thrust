@@ -48,6 +48,11 @@ margin-bottom: 5px;
 }
 .service-item{
     color: white;
+    
+}
+.service-item h3{
+    text-align: center;
+    margin-bottom: 2px;
 }
 .container{
     max-width: 1400px;
@@ -56,16 +61,22 @@ margin-bottom: 5px;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
-    "menu menu seleccion seleccion seleccion seleccion seleccion"
-    "menu menu seleccion seleccion seleccion seleccion seleccion"
-    "menu menu seleccion seleccion seleccion seleccion seleccion"
-    "menu menu seleccion seleccion seleccion seleccion seleccion"
-    "menu menu seleccion seleccion seleccion seleccion seleccion"
-    "menu menu seleccion seleccion seleccion seleccion seleccion";
+    "menu menu menu seleccion seleccion seleccion seleccion"
+    
 
 }
 .column__menu{
     grid-area: menu;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.35); 
+    color: black;
+    padding: 2rem;
+    border-radius: 25px;
+    text-align: center ;
+    
+}
+.menu__title{
+    margin-bottom: 1rem;
+    color: white;
 }
 .menu__select{
     margin-right: 5px;
@@ -73,6 +84,11 @@ margin-bottom: 5px;
 .column__seleccion{
     grid-area: seleccion;
     margin-left: 3rem;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.35); 
+    color: black;
+    padding: 2rem;
+    border-radius: 25px;
+    
 }
 .seleccion__title{
     color: white;
@@ -84,4 +100,7 @@ margin-bottom: 5px;
     justify-content: center;
     align-items: center;
 
+}
+.btn__seleccion{
+    margin-left: 16rem;
 }
