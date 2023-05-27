@@ -1,0 +1,87 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+body {
+    background: rgb(53, 53, 53); 
+    font-family: sans-serif;
+    margin: 20px;
+}
+  
+h1 {
+color: white;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+}
+
+select {
+width: 300px;
+height: 30px;
+background-color: gray;
+}
+
+#selected-services {
+margin-top: 20px;
+color: white;
+}
+
+#selected-services h3 {
+margin: 0;
+
+}
+
+#selected-services p {
+margin: 0;
+margin-bottom: 5px;
+
+}
+.content__title{
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 3rem;
+}
+.service-item{
+    color: white;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "menu menu seleccion seleccion seleccion seleccion seleccion"
+    "menu menu seleccion seleccion seleccion seleccion seleccion"
+    "menu menu seleccion seleccion seleccion seleccion seleccion"
+    "menu menu seleccion seleccion seleccion seleccion seleccion"
+    "menu menu seleccion seleccion seleccion seleccion seleccion"
+    "menu menu seleccion seleccion seleccion seleccion seleccion";
+
+}
+.column__menu{
+    grid-area: menu;
+}
+.menu__select{
+    margin-right: 5px;
+}
+.column__seleccion{
+    grid-area: seleccion;
+    margin-left: 3rem;
+}
+.seleccion__title{
+    color: white;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.column__seleccion h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
