@@ -51,11 +51,30 @@ addServiceBtn.addEventListener('click', () => {
     serviceItem.innerHTML = `
       <h3>${service.servicio}</h3>
       <p>Objetivo: ${service.objetivo}</p>
-      <p>Detalles: ${service.detalles}</p>
+      
       <p>Entregables: ${service.entregable}</p>
       <p>Tiempo: ${service.tiempo}</p>
       <p>Precio: ${service.precio}</p>
+      <p>Detalles:</p>
     `;
+    const detallesList = document.createElement('ul');
+    service.detalles.forEach(detalle => {
+        const detalleItem = document.createElement('li');
+        detalleItem.textContent = detalle;
+        detallesList.appendChild(detalleItem);
+    });
+    
+    serviceItem.appendChild(detallesList);
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.innerHTML = '&#x2716;'; // Código HTML para la "X"
+    deleteBtn.classList.add('delete-btn'); // Agregar la clase "delete-btn" al botón
+    deleteBtn.addEventListener('click', () => {
+      selectedServices = selectedServices.filter(s => s.servicio !== service.servicio);
+      servicesList.removeChild(serviceItem);
+    });
+    
+    serviceItem.appendChild(deleteBtn);
     servicesList.appendChild(serviceItem);
   }
 });

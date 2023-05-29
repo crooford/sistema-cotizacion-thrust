@@ -104,3 +104,17 @@ margin-bottom: 5px;
 .btn__seleccion{
     margin-left: 16rem;
 }
+.delete-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
