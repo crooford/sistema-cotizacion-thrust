@@ -46,26 +46,16 @@ addServiceBtn.addEventListener('click', () => {
   const service = availableServices.find(s => s.servicio === selectedService);
   if (service) {
     selectedServices.push(service);
+    // crea un div para almacenar la info del servicio
     const serviceItem = document.createElement('div');
     serviceItem.classList.add('service-item');
-    serviceItem.innerHTML = `
-      <h3>${service.servicio}</h3>
-      <p>Objetivo: ${service.objetivo}</p>
-      
-      <p>Entregables: ${service.entregable}</p>
-      <p>Tiempo: ${service.tiempo}</p>
-      <p>Precio: ${service.precio}</p>
-      <p>Detalles:</p>
-    `;
-    const detallesList = document.createElement('ul');
-    service.detalles.forEach(detalle => {
-        const detalleItem = document.createElement('li');
-        detalleItem.textContent = detalle;
-        detallesList.appendChild(detalleItem);
-    });
-    
-    serviceItem.appendChild(detallesList);
+    // crea un h3 para agregar el titulo del servicio
+    const serviceTitle = document.createElement('h3');
+    serviceTitle.classList.add('service-title')
+    serviceTitle.textContent = service.servicio;
+    serviceItem.appendChild(serviceTitle);
 
+    //crea el boton de eliminar el servicio seleccionado
     const deleteBtn = document.createElement('button');
     deleteBtn.innerHTML = '&#x2716;'; // Código HTML para la "X"
     deleteBtn.classList.add('delete-btn'); // Agregar la clase "delete-btn" al botón
@@ -73,8 +63,25 @@ addServiceBtn.addEventListener('click', () => {
       selectedServices = selectedServices.filter(s => s.servicio !== service.servicio);
       servicesList.removeChild(serviceItem);
     });
-    
     serviceItem.appendChild(deleteBtn);
+    
+    //crea un parrafo para agregar detalles 
+    const serviceDetalles = document.createElement('p');
+    serviceDetalles.classList.add('service-details');
+    serviceDetalles.textContent = 'Detalles:';
+    serviceItem.appendChild(serviceDetalles);
+
+    //crea la lista de detalles
+    const detallesList = document.createElement('ul');
+    detallesList.classList.add('list-details');
+    service.detalles.forEach(detalle => {
+        const detalleItem = document.createElement('li');
+        detalleItem.textContent = detalle;
+        detallesList.appendChild(detalleItem);
+    });
+    serviceItem.appendChild(detallesList);
+    
+    
     servicesList.appendChild(serviceItem);
   }
 });
