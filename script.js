@@ -50,11 +50,14 @@ addServiceBtn.addEventListener('click', () => {
     const serviceItem = document.createElement('div');
     serviceItem.classList.add('service-item');
     
+    const serviceTitleBtn = document.createElement('div');
+    serviceTitleBtn.classList.add('service-title-btn')
+
     // crea un h3 para agregar el titulo del servicio
     const serviceTitle = document.createElement('h3');
     serviceTitle.classList.add('service-title')
     serviceTitle.textContent = service.servicio;
-    serviceItem.appendChild(serviceTitle);
+    serviceTitleBtn.appendChild(serviceTitle);
 
     //crea el boton de eliminar el servicio seleccionado
     const deleteBtn = document.createElement('button');
@@ -64,8 +67,8 @@ addServiceBtn.addEventListener('click', () => {
       selectedServices = selectedServices.filter(s => s.servicio !== service.servicio);
       servicesList.removeChild(serviceItem);
     });
-    serviceItem.appendChild(deleteBtn);
-    
+    serviceTitleBtn.appendChild(deleteBtn);
+    serviceItem.appendChild(serviceTitleBtn);
     //crea un parrafo para agregar detalles 
     const serviceDetalles = document.createElement('p');
     serviceDetalles.classList.add('service-details');
