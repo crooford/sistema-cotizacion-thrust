@@ -85,7 +85,6 @@ addServiceBtn.addEventListener('click', () => {
     });
     serviceItem.appendChild(detallesList);
     
-    
     servicesList.appendChild(serviceItem);
   }
 });

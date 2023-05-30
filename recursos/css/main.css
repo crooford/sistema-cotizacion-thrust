@@ -4,6 +4,14 @@
     margin: 0;
     box-sizing: border-box ;
 }
+:root{
+    --first: #262C60;
+    --second: #5361AA;
+    --third : #A2A5D3;
+    --fourth: #DF495E;
+    --fifth: #F6BA47;
+}
+    
 
 body {
     background: #FFFFFF; 
@@ -11,10 +19,10 @@ body {
     margin: 20px;
 }
 
-.logo__polea{
-    max-width: 9rem;
-}
 
+.thrust__logo{
+    max-width: 12rem;
+}
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -23,13 +31,13 @@ body {
     grid-template-rows: 1fr;
     grid-template-areas:
     
-    "menu menu seleccion seleccion seleccion seleccion seleccion";
+    "menu menu menu seleccion seleccion seleccion seleccion";
     
 
 }
 
 .service-item{
-    color: #1D1E1B;
+    color: var(--second);
     margin-bottom: 10px;
    
     
@@ -37,6 +45,7 @@ body {
 
 .service-item h3{
     text-align: center;
+    color: var(--first);
     margin-bottom: 2px;
 }
 
@@ -46,11 +55,11 @@ body {
 
 .menu__title{
     margin-bottom: 1rem;
-    color: #1D1E1B;
+    color: var(--first);
 }
 
 .menu__select{
-    width: 350px;
+    width: 340px;
     height: 50px;
     border-radius: 10px;
     background-color: transparent;
@@ -63,7 +72,7 @@ body {
 
 .menu__select:focus{
     outline: none;
-    box-shadow: 0 0 2px -1px #1D1E1B;
+    box-shadow: 0 0 2px -1px var(--first);
 }
 .btn__add__service{
     display: inline-block;
@@ -71,8 +80,8 @@ body {
     height: 45px;
     border-radius: 25px;
     border: 0;
-    background-color: #1D1E1B;
-    color: #D0CFCD;
+    background-color: var(--first);
+    color: var(--third);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-size: 15px;
@@ -86,17 +95,17 @@ body {
 
 .btn__add__service:hover{
     letter-spacing: 2px;
-    background-color: #FCBF00;
-    color: #1D1E1B;
+    background-color: var(--fifth);
+    color: var(--first);
     font-weight: bold;
-    box-shadow: #FCBF00 0px 2px 5px 0px;
+    box-shadow: var(--fifth) 0px 2px 5px 0px;
 }
 
 .btn__add__service:active {
     letter-spacing: 3px;
-    background-color: #FCBF00;
-    color: #1D1E1B;
-    box-shadow: #FCBF00 0px 0px 0px 0px;
+    background-color: var(--fifth);
+    color: var(--first);
+    box-shadow: var(--fifth) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
 }
@@ -104,8 +113,8 @@ body {
 .column__seleccion{
     grid-area: seleccion;
     margin-top: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
     /* margin-left: 1rem;
     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.15); 
     color: black;
@@ -125,9 +134,10 @@ body {
 }
 
 .seleccion__title{
-    color: #1D1E1B;
+    color: var(--first);
     justify-content: center;
     margin-bottom: 2rem;
+    
 }
 
 .column__seleccion h2{
@@ -144,8 +154,8 @@ body {
     height: 50px;
     border-radius: 25px;
     border: 0;
-    background-color: #1D1E1B;
-    color: #D0CFCD;
+    background-color: var(--first);
+    color: var(--third);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-size: 15px;
@@ -157,23 +167,23 @@ body {
 
 .btn__seleccion:hover{
     letter-spacing: 2px;
-    background-color: #FCBF00;
-    color: #1D1E1B;
+    background-color: var(--fifth);
+    color: var(--first);
     font-weight: bold;
-    box-shadow: #FCBF00 0px 2px 5px 0px;
+    box-shadow: var(--fifth) 0px 2px 5px 0px;
 }
 
 .btn__seleccion:active {
     letter-spacing: 3px;
-    background-color: #FCBF00;
-    color: #1D1E1B;
+    background-color: var(--fifth);
+    color: var(--first);
     box-shadow: #FCBF00 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
 
 }
 .delete-btn {
-    background-color:#FCBF00;
+    background-color:var(--fourth);
     color: #FFFFFF;
     border: none;
     border-radius: 50%;
@@ -186,10 +196,10 @@ body {
 }
 .delete-btn:hover{
     letter-spacing: 2px;
-    background-color: #FCBF00;
-    color: #1D1E1B;
+    background-color: var(--third);
+    color: var(--first);
     font-weight: bold;
-    box-shadow: #FCBF00 0px 2px 5px 0px;
+    box-shadow: var(--first) 0px 2px 5px 0px;
 }
   
 .list-details{
