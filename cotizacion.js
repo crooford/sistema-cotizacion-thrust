@@ -6,30 +6,77 @@ const urlParams = new URLSearchParams(window.location.search);
 const quoteData = urlParams.get('quote');
 const selectedServices = JSON.parse(decodeURIComponent(quoteData));
 
-// Generar la tabla con los servicios seleccionados
-const table = document.createElement('table');
-table.innerHTML = `
-  <tr>
-    <th>Servicio</th>
-    <th>Objetivo</th>
-    <th>Detalles</th>
-    <th>Entregables</th>
-    <th>Tiempo</th>
-    <th>Precio</th>
-  </tr>
-`;
+  // Generar la tabla con los servicios seleccionados
+  const selectedItem = document.createElement('div');
+  selectedItem.classList.add('selected-item-group');
 
 selectedServices.forEach(service => {
-  const row = document.createElement('tr');
-  row.innerHTML = `
-    <td>${service.servicio}</td>
-    <td>${service.objetivo}</td>
-    <td>${service.detalles}</td>
-    <td>${service.entregable}</td>
-    <td>${service.tiempo}</td>
-    <td>${service.precio}</td>
-  `;
-  table.appendChild(row);
+  // primera linea de la cotizacion
+  const serviceSelect = document.createElement('div');
+  serviceSelect.classList.add('service-select');
+
+  // elementos agregados en la primera linea
+  const serviceTitle = document.createElement('h3');
+  serviceTitle.classList.add('service-title');
+  serviceTitle.textContent = service.servicio;
+  serviceSelect.appendChild(serviceTitle);
+
+  const servicePrice = document.createElement('h3');
+  servicePrice.classList.add('service-price');
+  servicePrice.textContent = `$${service.precio} MXN`;
+  serviceSelect.appendChild(servicePrice);
+
+  selectedItem.appendChild(serviceSelect);
+
+
+  const serviceDetails = document.createElement('div');
+  serviceDetails.classList.add('service-details');
+
+  const detailTitle = document.createElement('p');
+  detailTitle.classList.add('detail-title');
+  detailTitle.textContent = 'Detalles:';
+  serviceDetails.appendChild(detailTitle);
+
+  const timeItem = document.createElement('h4');
+  timeItem.classList.add('time-item');
+  timeItem.textContent = `${service.tiempo}`;
+  serviceDetails.appendChild(timeItem);
+
+  selectedItem.appendChild(serviceDetails);
+
+  const detallesList = document.createElement('ul');
+  detallesList.classList.add('list-details');
+  service.detalles.forEach(detalle => {
+      const detalleItem = document.createElement('li');
+      detalleItem.textContent = detalle;
+      detallesList.appendChild(detalleItem);
+    });
+  selectedItem.appendChild(detallesList);
+
+  const serviceEntregable = document.createElement('div');
+  serviceEntregable.classList.add('service-entregable');
+
+  const entregableTitle = document.createElement('p');
+  entregableTitle.classList.add('entregable-title');
+  entregableTitle.textContent = 'Entregable: ';
+  serviceEntregable.appendChild(entregableTitle);
+
+  selectedItem.appendChild(serviceEntregable)
+
+  const entregableList = document.createElement('ul');
+  entregableList.classList.add('list-entregable');
+  service.entregable.forEach(entregable => {
+    const entregableItem = document.createElement('li');
+    entregableItem.textContent = entregable;
+    entregableList.appendChild(entregableItem);
+  });
+  selectedItem.appendChild(entregableList);
+
+
+
+  
+  
 });
 
-quoteTable.appendChild(table);
+quoteTable.appendChild(selectedItem);
+
