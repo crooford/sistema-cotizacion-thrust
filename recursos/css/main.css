@@ -20,7 +20,8 @@ body {
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
-    "menu menu menu seleccion seleccion seleccion seleccion"
+    
+    "menu menu seleccion seleccion seleccion seleccion seleccion";
     
 
 }
@@ -73,6 +74,8 @@ body {
     font-size: medium;
     margin-left: 10px;
     cursor: pointer;
+    margin-top: 10px;
+   
 }
 
 .btn__add__service:hover{
@@ -80,19 +83,29 @@ body {
     background-color: #FCBF00;
     color: #1D1E1B;
     font-weight: bold;
-    /* box-shadow: #FCBF00 0px 7px 9px 0px; */
+    box-shadow: #FCBF00 0px 2px 5px 0px;
 }
 
 
 .column__seleccion{
     grid-area: seleccion;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    
     /* margin-left: 1rem;
     box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.15); 
     color: black;
     padding: 2rem;
     border-radius: 25px; */
     
+}
+.seleccion__btn__title{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.seleccion__content{
+    grid-area: seleccion;
 }
 
 .seleccion__title{
@@ -128,7 +141,7 @@ body {
     background-color: #FCBF00;
     color: #1D1E1B;
     font-weight: bold;
-    box-shadow: #FCBF00 0px 7px 19px 0px;
+    box-shadow: #FCBF00 0px 2px 5px 0px;
 }
 .delete-btn {
     background-color:#FCBF00;

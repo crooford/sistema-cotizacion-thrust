@@ -49,6 +49,7 @@ addServiceBtn.addEventListener('click', () => {
     // crea un div para almacenar la info del servicio
     const serviceItem = document.createElement('div');
     serviceItem.classList.add('service-item');
+    
     // crea un h3 para agregar el titulo del servicio
     const serviceTitle = document.createElement('h3');
     serviceTitle.classList.add('service-title')
