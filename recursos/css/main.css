@@ -19,9 +19,14 @@ body {
     margin: 20px;
 }
 
-
+.img__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .thrust__logo{
     max-width: 12rem;
+    
 }
 .container{
     max-width: 1400px;
@@ -54,7 +59,7 @@ body {
 }
 
 .menu__title{
-    margin-bottom: 1rem;
+    
     color: var(--first);
 }
 
@@ -112,7 +117,7 @@ body {
 
 .column__seleccion{
     grid-area: seleccion;
-    margin-top: 1rem;
+    
     margin-left: 1rem;
     margin-right: 2rem;
     /* margin-left: 1rem;
@@ -150,7 +155,7 @@ body {
 .btn__seleccion{
     
     display: inline-block;
-    width: 300px;
+    width: 150px;
     height: 50px;
     border-radius: 25px;
     border: 0;
@@ -210,4 +215,8 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
+}
+.seleccion__btn__title{
+    margin-top: 40px;
+    
 }
