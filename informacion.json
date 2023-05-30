@@ -1,106 +1,150 @@
 [
         {
-            "servicio": "Identidad de Marca",
-            "objetivo": "Desarrollar una personalidad y concepto creativo solo para conectar y ser relevantes para nuestro público objetivo.",
-            "detalles": ["Personalidad de marca","Analisis de competencia y ejemplos análogos","Público objetivo","Propuesta de valor","Concepto Creativo","Naiming"],
-            "entregable":["Presentación con explicacion de los puntos anteriormente mencionados"],
-            "tiempo":"15 Días",
-            "precio":0
+            "servicio": "Paquete 480p - Basico",
+            "detalles": ["9 publicaciones (8 fotos y 1 reels)","15 historias (9 repost)","Sesión de fotografía y video (2 hrs)","Publicación de posteos","Creación de interacción","2 redes sociales, instagram con espejo en facebook"],
+            "entregable":["Parrilla de contenido","Referencias gráficas"],
+            "tiempo":"10 días hábiles",
+            "precio":2500
         },
         {
-            "servicio": "Imagen de Marca",
-            "objetivo": "Desarrollar un lenguaje visual, estético, justificado y funcional de la marca basandonos en la identidad de la marca.",
-            "detalles": ["Moodboard","Logotipo","Manual corporativo básico","Texturas","3 Aplicaciones - diseños editoriales no mayores a 2 páginas -","Propuesta fotografica","Propuesta de uso de identidad de marca en redes sociales"],
-            "entregable":["Manual de identidad en formato editable .AI y .PDF","Logotipo en los siguientes formatos .AI, .PDF, .JPG y .PNG","Tipografías en versión descargable .TTC o .TTF"],
-            "tiempo":"10 Días",
-            "precio":0
+            "servicio": "Paquete 720p - Medio",
+            "detalles": ["12 publicaciones (10 fotos y 2 reels)","24 historias (12 repost)","Sesión de fotografía y video (3 hrs)","Publicación de posteos","Creación de interacción","2 redes sociales, instagram con espejo en facebook"],
+            "entregable":["Parrilla de contenido","Referencias gráficas"],
+            "tiempo":"10 días hábiles",
+            "precio":3100
         },
         {
-            "servicio": "Estrategia de comunicación para 3 meses",
-            "objetivo": "Identificar objetivos especificos de la comunicación",
-            "detalles": ["Canales óptimos para la comunicación y justificación","Identificar frecuencia o temporalidad","Formatos para la comunicación (fotos, videos, etc)","Ideas de implementación para publicidad Offline"],
-            "entregable":["Documento con la justificación y objetivos de la estrategia","Se detallan las actividades y etapas necesarias para la gestión adecuada de la estrategia creada"],
-            "tiempo":"5 Días hábiles",
+            "servicio": "Paquete 1080p - Intermedio",
+            "detalles": [   
+                            "15 publicaciones (12 fotos y 3 reels)",
+                            "30 historias (15 repost)",
+                            "Sesión de fotografía y video (4 hrs)",
+                            "Publicación de posteos",
+                            "Creación de interacción",
+                            "2 redes sociales, instagram con espejo en facebook"
+                        ],
+            "entregable":[
+                            "Parrilla de contenido",
+                            "Referencias gráficas"
+                        ],
+            "tiempo":"10 días hábiles",
+            "precio":3700
+        },
+        {
+            "servicio": "Paquete 4k - Avanzado",
+            "detalles": [   
+                            "18 publicaciones (14 fotos y 4 reels)",
+                            "30 historias (18 repost)",
+                            "Sesión de fotografía y video (4 hrs)",
+                            "Publicación de posteos",
+                            "Creación de interacción",
+                            "Metricas y resultados",
+                            "2 redes sociales, instagram con espejo en facebook",
+                            "Campaña de publicidad incluida $500",
+                            "Manejo de DM's"                            
+                        ],
+            "entregable":[
+                            "Parrilla de contenido",
+                            "Referencias gráficas"
+                        ],
+            "tiempo":"10 días hábiles",
+            "precio":3700
+        },
+        {
+            "servicio": "Paquete HD - Básico",
+            "detalles": [   
+                            "6 publicaciones (3 fotos y 3 reels)",
+                            "Sesión de fotografía y video (3 hrs)",
+                            "Publicación de posteos",
+                            "Creación de interacción",
+                            "2 redes sociales, instagram con espejo en facebook"
+                                                      
+                        ],
+            "entregable":[
+                            "Parrilla de contenido",
+                            "Referencias gráficas"
+                        ],
+            "tiempo":"15 días hábiles",
+            "precio":4000
+        },
+        {
+            "servicio": "Paquete Full HD - Medio",
+            "detalles": [   
+                            "8 publicaciones (3 fotos y 5 reels)",
+                            "Sesión de fotografía y video (4 hrs)",
+                            "Publicación de posteos",
+                            "Creación de interacción",
+                            "2 redes sociales, instagram con espejo en facebook"
+                                                      
+                        ],
+            "entregable":[
+                            "Parrilla de contenido",
+                            "Referencias gráficas"
+                        ],
+            "tiempo":"15 días hábiles",
+            "precio":6000
+        },
+        {
+            "servicio": "Paquete 4k - Completo",
+            "detalles": [   
+                            "12 publicaciones (5 fotos y 7 reels)",
+                            "Sesión de fotografía y video (5 hrs)",
+                            "Publicación de posteos",
+                            "Creación de interacción",
+                            "2 redes sociales, instagram con espejo en facebook"
+                                                      
+                        ],
+            "entregable":[
+                            "Parrilla de contenido",
+                            "Referencias gráficas"
+                        ],
+            "tiempo":"15 días hábiles",
+            "precio":8000
+        },
+        {
+            "servicio": "Branding Paq Básico",
+            "detalles": [   
+                            "Logo"
+                            
+                                                      
+                        ],
+            "entregable":[
+                            "Archivo logo"
+                        ],
+            "tiempo":"1 días hábiles",
+            "precio":1000
+        },
+        {
+            "servicio": "Branding Paq Medio",
+            "detalles": [   
+                            "Logo",
+                            "Paleta de colores",
+                            "Tipografia"                               
+                        ],
+            "entregable":[
+                            "Logo",
+                            "Paleta de colores",
+                            "Tipografia"
+                        ],
+            "tiempo":"2 días hábiles",
             "precio":2000
         },
         {
-            "servicio": "Estrategia de contenido",
-            "objetivo": "Indetificar objetivos de de comunicación",
-            "detalles": ["Pilares de comunicación","Canales optimos para la comunicación y justificación","Identificar frecuencia o temporalidad","Formatos para la comunicación (Foto, Video, Carrusel etc)","Ideas de implementación para públicidad offline"],
-            "entregable":["Referencias gráficas","Calendario mensual","Distribución de pilares"],
-            "tiempo":"5 Días hábiles",
-            "precio":5000
-        },
-        {
-            "servicio": "Diseño gráfico",
-            "objetivo": "",
-            "detalles": ["Adecuación de material del shooting base a parrilla de contenido","Retoque fotográfico","Intervención gráfica 2D e ilustración"],
-            "entregable":["20 publicaciones"],
-            "tiempo":"7 Días hábiles",
-            "precio":6000
-        },
-        {
-            "servicio": "Multimedia",
-            "objetivo": "",
-            "detalles": ["Adecuación de material del shooting base a parrilla de contenido","Montaje","Edición","Gráficos","Corrección de color","Propuesta sonora"],
-            "entregable":["4 Reels o videos no mayores a 2 min"],
-            "tiempo":"7 Días hábiles",
-            "precio":6000
-        },
-        {
-            "servicio": "Community Managment",
-            "objetivo": "",
-            "detalles": ["Publicación de posteos","Creación de interacción","Métricas y resultados mensuales","Community Managment de primer impacto","Asesoria quincenal de manejo de marca con una sesión de hasta dos horas."],
-            "entregable":[""],
-            "tiempo":"mensual",
-            "precio":3500
-        },
-        {
-            "servicio": "Consultoría",
-            "objetivo": "Esta asesoria servira para tener una visión externa de la marca y brindar objetividad. ",
-            "detalles": ["2 consultorias mensuales de una hora cada una","Se realizara un peloteo creativo para realizar posibles acciones de la marca","Se buscará asesorar a la marca de como abordar nuevos temas o servicios a implementar","Se dará seguimiento que ayudará a justificar y guiar en temas de comunicación e imágen de marca."],
-            "entregable":[""],
-            "tiempo":"mensual",
+            "servicio": "Branding Paq Avanzado",
+            "detalles": [   
+                            "Logo",
+                            "Icono",
+                            "Paleta de colores",
+                            "Tipografia",
+                            "2 Mock Ups"                     
+                        ],
+            "entregable":[
+                            "Logo",
+                            "Paleta de colores",
+                            "Tipografia"
+                        ],
+            "tiempo":"4 días hábiles",
             "precio":3000
-        },
-        {
-            "servicio": "Facebook Ads",
-            "objetivo": "",
-            "detalles": ["Estos costos cubren un máximo de 3 campañas por cuenta publicitaria con inversiones menores a los $20,000.00 mensuales.","Se proveen capturas de pantalla o reportes sencillos de las campañas. En caso de requerir un reporte más elaborado con diseño gráfico o en PDF, se cotiza aparte.","En caso de que se trate de campañas más complejas o elaboradas, multicanal o con inversiones mayores a los $20,000.00 mensuales se cotizaría aparte."],
-            "entregable":[""],
-            "tiempo":"todo el mes",
-            "precio":3000
-        },
-        {
-            "servicio": "Presentación corporativa",
-            "objetivo": " Describir la identidad de la marca de forma que se pueda utilizar para transmitir al cliente una muy buena primera imagen.",
-            "detalles": ["Realizamoremos una presentación potente y eficaz para conseguir llamar la atención de los posibles clientes y colaboradores"],
-            "entregable":[""],
-            "tiempo":"7 Días hábiles",
-            "precio":5000
-        },
-        {
-            "servicio": "Video cooporativo",
-            "objetivo": "",
-            "detalles": ["Destinado a vender o describir a la empresa, sin describir un producto en particular. Es decir, describir la historia de la empresa, además de la misión, sus accionistas o su comunidad, la visión  y sus aspiraciones futuras."],
-            "entregable":[""],
-            "tiempo":"15 Días hábiles",
-            "precio":20000
-        },
-        {
-            "servicio": "Shooting",
-            "objetivo": "",
-            "detalles": ["Plan de rodaje","Hoja de llamado","Shooting List","Levantamiento de fotografía y video","Dirección fotográfica","Medio día de rodaje (4hrs)","Diseño de 1 a dos templates de mensajería y/o newsletter al mes","Campaña de mailing de hasta 2000 correos electrónicos enviados al mes"],
-            "entregable":[""],
-            "tiempo":"1 Día hábil",
-            "precio":0
-        },
-        {
-            "servicio": "Sitio web",
-            "objetivo": "Desarrollo de sitio web con tecnología Wordpress",
-            "detalles": ["Instalación y configuración de template gráfico con licencia premium.","Desarrollo de hasta 5 secciones para página informativa empresarial.(Inicio, nosotros, servicios, contacto, galería, nuestro clientes y otras que puedan ser relevantes)","Integración de blog","Integración de módulos de Google Analytics para visualizar las estadísticas de vistas y comportamiento de visitantes."],
-            "entregable":[""],
-            "tiempo":"20 Días hábiles",
-            "precio":30000
         }
+        
 ]
