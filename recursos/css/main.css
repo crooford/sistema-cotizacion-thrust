@@ -10,9 +10,11 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 20px;
 }
+
 .logo__polea{
     max-width: 9rem;
 }
+
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -25,12 +27,14 @@ body {
     
 
 }
+
 .service-item{
     color: #1D1E1B;
     margin-bottom: 10px;
    
     
 }
+
 .service-item h3{
     text-align: center;
     margin-bottom: 2px;
@@ -39,10 +43,12 @@ body {
 .column__menu{
     grid-area: menu; 
 }
+
 .menu__title{
     margin-bottom: 1rem;
     color: #1D1E1B;
 }
+
 .menu__select{
     width: 350px;
     height: 50px;
@@ -86,6 +92,14 @@ body {
     box-shadow: #FCBF00 0px 2px 5px 0px;
 }
 
+.btn__add__service:active {
+    letter-spacing: 3px;
+    background-color: #FCBF00;
+    color: #1D1E1B;
+    box-shadow: #FCBF00 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
 
 .column__seleccion{
     grid-area: seleccion;
@@ -99,11 +113,13 @@ body {
     border-radius: 25px; */
     
 }
+
 .seleccion__btn__title{
     display: flex;
     justify-content: space-between;
     
 }
+
 .seleccion__content{
     grid-area: seleccion;
 }
@@ -113,12 +129,14 @@ body {
     justify-content: center;
     margin-bottom: 2rem;
 }
+
 .column__seleccion h2{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
 .btn__seleccion{
     
     display: inline-block;
@@ -136,12 +154,23 @@ body {
     cursor: pointer;
     
 }
+
 .btn__seleccion:hover{
     letter-spacing: 2px;
     background-color: #FCBF00;
     color: #1D1E1B;
     font-weight: bold;
     box-shadow: #FCBF00 0px 2px 5px 0px;
+}
+
+.btn__seleccion:active {
+    letter-spacing: 3px;
+    background-color: #FCBF00;
+    color: #1D1E1B;
+    box-shadow: #FCBF00 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+
 }
 .delete-btn {
     background-color:#FCBF00;
