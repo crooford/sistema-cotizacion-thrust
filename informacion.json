@@ -102,7 +102,7 @@
             "precio":8000
         },
         {
-            "servicio": "Branding Paq Básico",
+            "servicio": "Branding Paquete Básico",
             "detalles": [   
                             "Logo"
                             
@@ -115,7 +115,7 @@
             "precio":1000
         },
         {
-            "servicio": "Branding Paq Medio",
+            "servicio": "Branding Paquete Medio",
             "detalles": [   
                             "Logo",
                             "Paleta de colores",
@@ -130,7 +130,7 @@
             "precio":2000
         },
         {
-            "servicio": "Branding Paq Avanzado",
+            "servicio": "Branding Paquete Avanzado",
             "detalles": [   
                             "Logo",
                             "Icono",
