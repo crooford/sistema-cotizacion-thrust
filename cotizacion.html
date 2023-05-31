@@ -7,16 +7,24 @@
   <link rel="stylesheet" href="./recursos/css/cotizacion.css">
 </head>
 <body>
-  <div class="header__container">
-    <img src="./recursos/img/thrust_bypolea.svg" class="thrust__logo" alt="logo thrust_bypolea">
-    <h1 class="title__cotizacion">COTIZACIÓN</h1>
-  </div>
-  
   <section class="section__cotizacion">
-
-    <div id="quote-table">
-
+    <div class="header__container">
+      <div class="client__content">
+        <p class="client__info">Cliente: xxxxxxxxxxx</p>
+        <p class="vigencia__info">Vigencia: xx/xx/xxxx</p>
+      </div>
+      <img src="./recursos/img/thrust_bypolea.svg" class="thrust__logo" alt="logo thrust_bypolea">
+      <div class="cotizacion__content">
+        <h2 class="title__cotizacion">COTIZACIÓN</h2>
+        <div class="fecha__content">
+          <p class="num__cotizacion">N° xxxx</p>
+          <p class="fecha__cotizacion">Fecha: xx/xx/xxxx</p>
+        </div>
+      </div>
     </div>
+    <div id="quote-table"></div>
+    <div class="total__cotizacion" id="quote-total"><h3>Total</h3></div>
+    
   </section>
   
   <script src="cotizacion.js"></script>

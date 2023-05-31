@@ -18,37 +18,45 @@ body {
 
 .header__container{
     display: flex;
-    justify-content: center;
-    padding: 30px;
-    
+    justify-content:space-between;
+    align-items:center;  
+    padding: 0px 5.5px 0px 5.5px;  
 }
-
+.client__content{
+    color:var(--first);
+    font-size: 17px;
+}
 .thrust__logo{
-    max-width: 10rem;
-    margin-right: 14rem;
-    
+    max-width: 13rem;
+      
 }
 
 .title__cotizacion{
-    color: var(--second);
+    color: var(--first);
     display: flex;
     font-size: 30px;
-    justify-content: right;
-    margin: 25px;
-    margin-left: 14rem;
+    letter-spacing: 2px;
+    
+}
+.fecha__content{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    color:var(--first)
 }
 
 .section__cotizacion{
     max-width: 816px;
     max-height: 1056px;
-    display: flex;
+    display: inline-block flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
 .selected-item-group{
-    width: 816px;
-    height: 1056px;
+    width: 816px ;
+    max-width: 816px;
+    max-height: 1056px;
 }
 .service-select{
     display: flex;
@@ -96,4 +104,12 @@ body {
     margin-left: 60px;
     color: var(--first);
     margin-bottom: 1rem;
+}
+
+.total__cotizacion{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--first);
+    color: var(--third);
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
 }
