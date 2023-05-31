@@ -70,12 +70,19 @@ selectedServices.forEach(service => {
     entregableItem.textContent = entregable;
     entregableList.appendChild(entregableItem);
   });
+  
+
+  // primera linea de la cotizacion
+  const serviceTotalSelect = document.createElement('div');
+  serviceTotalSelect.classList.add('service-total-select');
+  
+  // elementos agregados en la primera linea
+  const serviceTotalTitle = document.createElement('h3');
+  serviceTotalTitle.classList.add('service-total-title');
+  serviceTotalTitle.textContent = 'Total';
+  serviceTotalSelect.appendChild(serviceTotalTitle);
+  
   selectedItem.appendChild(entregableList);
-
-
-
-  
-  
 });
 
 quoteTable.appendChild(selectedItem);

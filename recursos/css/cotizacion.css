@@ -15,6 +15,29 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 20px;
 }
+
+.header__container{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.thrust__logo{
+    max-width: 10rem;
+    margin-right: 14rem;
+    
+}
+
+.title__cotizacion{
+    color: var(--second);
+    display: flex;
+    font-size: 30px;
+    justify-content: right;
+    margin: 25px;
+    margin-left: 14rem;
+}
+
 .section__cotizacion{
     max-width: 816px;
     max-height: 1056px;
@@ -35,6 +58,25 @@ body {
     padding: 0.5rem 1.5rem 0.5rem 1rem ;
     
 }
+
+.service-total-select{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--first);
+    color: var(--third);
+    padding: 0.5rem 1.5rem 0.5rem 1rem ;
+    
+}
+
+.service-total-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--first);
+    color: var(--third);
+    padding: 0.5rem 1.5rem 0.5rem 1rem ;
+    
+}
+
 .service-details{
     display: flex;
     justify-content: space-between;
