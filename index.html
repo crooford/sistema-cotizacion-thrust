@@ -3,20 +3,48 @@
 <head>
   <title>Servicios</title>
   <link rel="stylesheet" href="./recursos/css/main.css">
+  <link rel="stylesheet" href="./recursos/css/cotizacion.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-  <div class="img__container">
+  <div class="img__container" id="img-container">
     <img src="./recursos/img/thrust_bypolea.svg" class="thrust__logo" alt="logo thrust_bypolea">
   </div>
-  <div class="container">
+  
+  <div class="container" id="container">
     
-    <div class="column__menu"> 
-      <h2 class="menu__title">Menú de Selección</h2>
-      <select class="menu__select" id="services"></select>
-      <button class="btn__add__service" id="add-service-btn">Agregar</button>
+    <div class="column__menu "> 
+      <div id="menu-seleccion">
+        <h2 class="menu__title">Menú de Selección</h2>
+        <select class="menu__select" id="services"></select>
+        <button class="btn__add__service" id="add-service-btn">Agregar</button>
+        <div class="form__container" >
+          <form>
+            <div class="form__group">
+              <h2>Informacíon Adicional</h2>
+              <div>
+                <label for="ncot">N° Cotización: </label>
+                <input type="text" id="ncot" name="ncot" placeholder="N° Cotización" required>
+              </div>
+              <div>
+                <label for="cliente">Cliente: </label>
+                <input type="text" id="cliente" name="cliente" placeholder="Cliente" required>
+              </div>
+              <div>
+                <label for="fecha">Fecha: </label>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+              <div>
+                <label for="fechav">Vigencia: </label>
+                <input type="date" id="fechav" name="fechav" required>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="column__seleccion">
       <div class="seleccion__btn__title">
@@ -25,8 +53,32 @@
       </div>
       <div class="seleccion__content" id="services-list"></div>
     </div>
-    
   </div>
+  <section class="section__cotizacion ocult" id="section-cot">
+    <div class="header__container">
+      <div class="client__content">
+        <p class="client__info">Cliente: <input type="text" id="cliente-recive" disabled=""></p>
+        <p class="vigencia__info">Vigencia: <input class ="fechav__input" type="date" id="fechav-recive" disabled=""></p>
+      </div>
+      <img src="./recursos/img/thrust_bypolea.svg" class="thrust__logo" alt="logo thrust_bypolea">
+      <div class="cotizacion__content">
+        <h2 class="title__cotizacion">COTIZACIÓN</h2>
+        <div class="fecha__content">
+          <p class="num__cotizacion">N° <input type="text" id="ncot-recive" disabled=""></p>
+          <div class="fecha__recive">
+            <p class="fecha__cotizacion">Fecha: <input class ="fechav__input" type="date" id="fecha-recive" disabled=""></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="quote-table"></div>
+    <div class="total__cotizacion" id="quote-total"><h3>Total</h3></div>
+    
+  </section>
+  <div class="container__btn__descargar ocult" id="container-btn-descarga">
+    <button class="btn__descargar" id="btn__descargar">Descargar</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

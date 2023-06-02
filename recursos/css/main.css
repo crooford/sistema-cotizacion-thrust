@@ -28,6 +28,7 @@ body {
     max-width: 12rem;
     
 }
+
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -39,6 +40,9 @@ body {
     "menu menu menu seleccion seleccion seleccion seleccion";
     
 
+}
+.ocult{
+    display: none !important ;
 }
 
 .service-item{
@@ -114,7 +118,12 @@ body {
     transform: translateY(10px);
     transition: 100ms;
 }
-
+.form__group h2{
+    font-weight: lighter ;
+    color: var(--first);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 .column__seleccion{
     grid-area: seleccion;
     

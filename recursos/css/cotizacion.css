@@ -28,6 +28,7 @@ body {
 }
 .thrust__logo{
     max-width: 13rem;
+    
       
 }
 
@@ -37,12 +38,49 @@ body {
     font-size: 30px;
     letter-spacing: 2px;
     
+    
+}
+
+.cotizacion__content h2{
+    justify-content: right;
+    margin-right: 3px;
+   
 }
 .fecha__content{
     display: flex;
+    align-items: right;
     justify-content: space-between;
-    margin-left: 5px;
-    color:var(--first)
+    margin-left: 8px;
+    color:var(--first);
+    
+}
+.client__content input{
+    border: none;
+    max-width: 150px;
+    font-size: medium;
+    color: var(--first);
+    letter-spacing: 1px; 
+}
+.fechav__input[type='date']{
+    font-size: large;
+    max-width: 108px;
+}
+.fechav__input[type='date']::-webkit-calendar-picker-indicator {
+    display: none;
+}
+.fecha__content input{
+    max-width: 50px;
+    font-size: medium;
+    color: var(--first);
+    letter-spacing: 1px;
+    border:none
+}
+.service-price{
+    font-weight: normal;
+}
+.fecha__recive{
+    display: flex;
+    justify-content: right;
 }
 
 .section__cotizacion{
@@ -112,4 +150,45 @@ body {
     background-color: var(--first);
     color: var(--third);
     padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+.container__btn__descargar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__descargar{
+    
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    background-color: var(--first);
+    color: var(--third);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    font-size: medium;
+    cursor: pointer;
+    
+}
+
+.btn__descargar:hover{
+    letter-spacing: 2px;
+    background-color: var(--fifth);
+    color: var(--first);
+    font-weight: bold;
+    box-shadow: var(--fifth) 0px 2px 5px 0px;
+}
+
+.btn__descargar:active {
+    letter-spacing: 3px;
+    background-color: var(--fifth);
+    color: var(--first);
+    box-shadow: #FCBF00 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+
 }
