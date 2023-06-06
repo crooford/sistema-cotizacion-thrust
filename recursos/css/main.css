@@ -19,6 +19,21 @@ body {
     margin: 20px;
 }
 
+.all-container{
+    display:grid;
+    grid-template-columns: max-content;
+    grid-template-rows: 3;
+    grid-template-areas:"grid1""grid2""grid3";
+}
+.row-1{
+    grid-area: grid1;
+}
+.row-2{
+    grid-area: grid2;
+}
+.row-3{
+    grid-area: grid3;
+}
 .img__container{
     display: flex;
     align-items: center;
@@ -34,7 +49,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: max-content;
     grid-template-areas:
     
     "menu menu menu seleccion seleccion seleccion seleccion";
@@ -77,11 +92,15 @@ body {
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
+    border: 1px solid var(--third);
+    color: var(--second);
+    opacity: 60%;
 }
 
 .menu__select:focus{
-    outline: none;
-    box-shadow: 0 0 2px -1px var(--first);
+    border-color: var(--first);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px var(--fifth);
+    outline: 0 none;
 }
 .btn__add__service{
     display: inline-block;
@@ -234,3 +253,36 @@ body {
     margin-top: 40px;
     
 }
+.group__container{
+    margin-bottom: 10px;
+}
+.group__container label{
+    margin-right: 5px;
+    font-weight: bolder;
+    color: var(--first);
+}
+.group__container input{
+    width: 250px;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid var(--third);
+    padding: 4px 20px;
+    font-size:large;
+    outline: none;
+    background-color: transparent;
+    color: var(--second);
+    
+    
+   
+}
+textarea:focus, input:focus, input[type='date']:focus {
+    border-color: var(--first);
+    box-shadow: 0 0.5px 0.5px 0 inset, 0 0 4px var(--fifth);
+    outline: 0 none;
+    
+}
+input::placeholder {
+    color: var(--second);
+    opacity: 80%;
+    letter-spacing: 2px;
+  }

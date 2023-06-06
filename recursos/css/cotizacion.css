@@ -60,6 +60,7 @@ body {
     font-size: medium;
     color: var(--first);
     letter-spacing: 1px; 
+    background-color: transparent;
 }
 .fechav__input[type='date']{
     font-size: large;
@@ -73,7 +74,8 @@ body {
     font-size: medium;
     color: var(--first);
     letter-spacing: 1px;
-    border:none
+    border:none;
+    background-color: transparent;
 }
 .service-price{
     font-weight: normal;
@@ -84,17 +86,14 @@ body {
 }
 
 .section__cotizacion{
-    max-width: 816px;
-    max-height: 1056px;
-    display: inline-block flex;
+    max-width: 900px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
 .selected-item-group{
-    width: 816px ;
-    max-width: 816px;
-    max-height: 1056px;
+    width: 900px ;
+   
 }
 .service-select{
     display: flex;
@@ -191,4 +190,71 @@ body {
     transform: translateY(10px);
     transition: 100ms;
 
+}
+.politicas__container{
+    margin-top: 25px;
+    color: var(--first);
+}
+.politicas__container h3{
+    text-align: center;
+}
+.politicas__container ul{
+    list-style:square;
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+.politicas__firma{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 40px;
+    
+}
+.line__firma{
+    display: flex;
+    justify-content: space-between;
+    
+   
+
+}
+.linea__firma {
+    border-bottom: solid;
+  
+    width: 390px;
+    margin-top: 20px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+.firmas{
+    text-align: center;
+    
+}
+.firmas-2{
+    display:grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.content__firma {
+    font-size: larger !important;
+    font-weight: bold;
+
+}
+.empresa__foot{
+    font-size: medium;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--first)
+}
+.firmas-2 input{
+    background-color: transparent;
+    border: none;
+    font-size: medium;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--first);
+    padding: 0;
 }

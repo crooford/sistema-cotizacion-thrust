@@ -100,18 +100,27 @@ generateQuoteBtn.addEventListener('click', () => {
     // Obtener referencia al elemento de la tabla
     const clienteInfo = document.getElementById('cliente').value;
     document.getElementById('cliente-recive').value = clienteInfo;
+    const representanteInfo = document.getElementById('representante').value;
+    document.getElementById('firma-representante').value = representanteInfo;
     const vigenciaInfo= document.getElementById('fechav').value;
     document.getElementById('fechav-recive').value = vigenciaInfo;
     const ncotizacion = document.getElementById('ncot').value;
     document.getElementById('ncot-recive').value = ncotizacion;
     const fechaInfo = document.getElementById('fecha').value;
     document.getElementById('fecha-recive').value = fechaInfo;
+    document.getElementById('firma-client').value =clienteInfo;
     const quoteTable = document.getElementById('quote-table');
     containerDiv.classList.add('ocult');
     const sectionCost = document.getElementById('section-cot');
     sectionCost.classList.remove('ocult');
     const containerImg = document.getElementById('img-container');
     containerImg.classList.add('ocult');
+    // containerImg.classList.remove('row-1');
+    // containerImg.classList.add('row-2');
+    // containerDiv.classList.remove('row-2');
+    // containerDiv.classList.add('row-3');
+    // sectionCost.classList.remove('row-3');
+    // sectionCost.classList.add('row-1');
     const containerDescarga = document.getElementById('container-btn-descarga');
     containerDescarga.classList.remove('ocult');
 
@@ -204,26 +213,28 @@ generateQuoteBtn.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded",() =>{
   descargaBtn.addEventListener("click",() =>{
-    const element = document.section;
+    var element = document.getElementById('section-cot')
     html2pdf().set({
-      margin: 1,
+      margin: [-180,7,-400,0],
       filename: 'cotizacion.pdf',
       image:{
         type: 'jpeg',
         quality: 0.98
       },
       html2canvas:{
-        scale: 3,
+        scale: 5,
         letterRendering: true,
       },
       jsPDF:{
-        unit: "in",
-        format: "a4",
-        orientation: 'portrait'
+        unit: "mm",
+        format: "a3",
       }
       
-    }).from(element).save().catch(err => console.log(err))
+    }).from(element).save().catch(err => console.log(err));
+    
   });
+
+  
 
 
 
