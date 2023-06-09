@@ -137,6 +137,7 @@ body {
     transform: translateY(10px);
     transition: 100ms;
 }
+
 .form__group h2{
     font-weight: lighter ;
     color: var(--first);
@@ -255,11 +256,13 @@ body {
 }
 .group__container{
     margin-bottom: 10px;
+    
 }
 .group__container label{
     margin-right: 5px;
     font-weight: bolder;
     color: var(--first);
+    
 }
 .group__container input{
     width: 250px;
@@ -272,8 +275,6 @@ body {
     background-color: transparent;
     color: var(--second);
     
-    
-   
 }
 textarea:focus, input:focus, input[type='date']:focus {
     border-color: var(--first);
