@@ -10,118 +10,55 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-  <main class="all-container" id="impresion">
-    <div class="section__cotizacion row-1 ocult" id="section-cot">
-      <div class="header__container">
-        <div class="client__content">
-          <p class="client__info">Cliente: <input type="text" id="cliente-recive" disabled=""></p>
-          <p class="vigencia__info">Vigencia: <input class ="fechav__input" type="date" id="fechav-recive" disabled=""></p>
-        </div>
-        <img src="./recursos/img/thrust_bypolea.svg" class="thrust__logo" alt="logo thrust_bypolea">
-        <div class="cotizacion__content">
-          <h2 class="title__cotizacion">COTIZACIÓN</h2>
-          <div class="fecha__content">
-            <p class="num__cotizacion">N° <input type="text" id="ncot-recive" disabled=""></p>
-            <div class="fecha__recive">
-              <p class="fecha__cotizacion">Fecha: <input class ="fechav__input" type="date" id="fecha-recive" disabled=""></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="quote-table"></div>
-      <div class="total__cotizacion" id="quote-total">
-        <h3>Total</h3>
-      </div>    
-      <div class="politicas__container">
-        <h3>POLITICAS</h3><br>
-        <p>Para poder iniciar una relación comercial con Thrust, se requiere el pago de la primera quincena de trabajo por adelantado.											
-          Asimismo, se informa a nuestros clientes que para finalizar la relación comercial											
-          se debe dar un aviso de al menos quince días de antelación.											
-          En caso de no hacerlo, se entenderá que se desea continuar con los servicios previamente contratados,											
-          por lo que se deberá realizar el pago correspondiente al periodo trabajado.</p><br>
-        <p> Con esta política, Thrust asegura que los clientes estén al tanto de las condiciones											
-          para empezar a trabajar y de los plazos para finalizar la relación comercial.											
-          Además, se establece que el pago por adelantado es un requisito necesario para iniciar la colaboración.	</p>										
-        <br>         
-        <p> Una vez presentada la linea de contenido contará una ronda de ajustes, a partir de la segunda se hara 											
-          un cobro adicional de $500 mxn.		</p>									
-        <br>                       
-        <p>Adicionalmente es necesario contar con la vinculacion de redes sociales											
-          Thrust no se hace responsable del retraso de publicaciones por contratiempos ocasionados por el cliente.</p>											
-        <ul>
-          <li>Propuesta por marca. </li>
-          <li>El precio no incluye IVA	</li>
-          <li>Factura + IVA</li>
-        </ul>
-        <div class="line__firma">
-          <div class="linea__firma"></div>
-          <div class="linea__firma"></div>
-        </div>                   
-        <div class="politicas__firma">
-          <div class="firmas">
-            <p class="content__firma">kevin ali inzunza santos</p>
-            <p class="empresa__foot">thrust</p>
-          </div>
-          <div class="firmas-2">
-            <input type="text" class="content__firma"  name="firma-representante" id="firma-representante" disabled="">
-            <input type="text" name="firma-client" id="firma-client" disabled="">
-          </div>
-        </div> 											
-      </div>
-      <div class="container__btn__descargar ocult" id="container-btn-descarga">
-        <button class="btn__descargar" id="btn__descargar">Descargar</button>
-      </div>
-    </div>
-
-    <div class="img__container row-2" id="img-container">
-      <img src="./recursos/img/thrust_bypolea.svg" class="thrust__logo" alt="logo thrust_bypolea">
-    </div>
-    <div class="container row-3" id="container">
-      <div class="column__menu "> 
-        <div id="menu-seleccion">
-          <h2 class="menu__title">Menú de Selección</h2>
-          <select class="menu__select" id="services"></select>
-          <button class="btn__add__service" id="add-service-btn">Agregar</button>
-          <div class="form__container" >
-            <form>
-              <div class="form__group">
-                <h2>Informacíon Adicional</h2>
-                <div class="group__container">
-                  <label for="ncot">N° Cotización: </label><br>
-                  <input type="text" id="ncot" name="ncot" placeholder="N° Cotización" required>
-                </div>
-                <div class="group__container">
-                  <label for="cliente">Cliente: </label><br>
-                  <input type="text" id="cliente" name="cliente" placeholder="Cliente" required>
-                </div>
-                <div class="group__container">
-                  <label for="cliente">Representante: </label><br>
-                  <input type="text" id="representante" name="Representante" placeholder="Representante" required>
-                </div>
-                <div class="group__container">
-                  <label for="fecha">Fecha: </label><br>
-                  <input type="date" id="fecha" name="fecha" required>
-                </div>
-                <div class="group__container">
-                  <label for="fechav">Vigencia: </label><br>
-                  <input type="date" id="fechav" name="fechav" required>
-                </div>
+  
+  <header class="img__container" id="img-container">
+    <img src="./recursos/img/thrust_bypolea.svg" class="thrust__logo" alt="logo thrust_bypolea">
+  </header>
+  <section class="container" id="container">
+    <div class="column__menu "> 
+      <div id="menu-seleccion">
+        <h2 class="menu__title">Menú de Selección</h2>
+        <select class="menu__select" id="services"></select>
+        <button class="btn__add__service" id="add-service-btn">Agregar</button>
+        <div class="form__container" >
+          <form>
+            <div class="form__group">
+              <h2>Informacíon Adicional</h2>
+              <div class="group__container">
+                <label for="ncot">N° Cotización: </label><br>
+                <input type="text" id="ncot" name="ncot" placeholder="N° Cotización" required>
               </div>
-            </form>
-          </div>
+              <div class="group__container">
+                <label for="cliente">Cliente: </label><br>
+                <input type="text" id="cliente" name="cliente" placeholder="Cliente" required>
+              </div>
+              <div class="group__container">
+                <label for="cliente">Representante: </label><br>
+                <input type="text" id="representante" name="Representante" placeholder="Representante" required>
+              </div>
+              <div class="group__container">
+                <label for="fecha">Fecha: </label><br>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+              <div class="group__container">
+                <label for="fechav">Vigencia: </label><br>
+                <input type="date" id="fechav" name="fechav" required>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="column__seleccion">
-        <div class="seleccion__btn__title">
-          <h2 class="seleccion__title">Servicios Seleccionados</h2>
-          <button class="btn__seleccion" id="generate-quote-btn">Cotizar</button>
-        </div>
-        <div class="seleccion__content" id="services-list"></div>
       </div>
     </div>
-    
-    <!-- div para hacer corte en el pdf <div class="html2pdf__page-break"></div> -->
-  </main>
+    <div class="column__seleccion">
+      <div class="seleccion__btn__title">
+        <h2 class="seleccion__title">Servicios Seleccionados</h2>
+        <button class="btn__seleccion" id="generate-quote-btn">Cotizar</button>
+      </div>
+      <div class="seleccion__content" id="services-list"></div>
+    </div>
+  </section>
+  <!-- div para hacer corte en el pdf <div class="html2pdf__page-break"></div> -->
+  
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotización</title>
+    <link rel="stylesheet" href="./recursos/css/cotizacion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <main class="all-container" id="impresion">
+        <div
+        class="container__btn__descargar "
+        id="container-btn-descarga"
+      >
+        <button class="btn__descargar" id="btn__descargar">Descargar</button>
+      </div>
+      <section class="section__cotizacion row-1 ocult" id="section-cot">
+        <div class="header__container">
+          <div class="client__content">
+            <p class="client__info">
+              Cliente: <input type="text" id="cliente-recive" disabled="" />
+            </p>
+            <p class="vigencia__info">
+              Vigencia:
+              <input
+                class="fechav__input"
+                type="date"
+                id="fechav-recive"
+                disabled=""
+              />
+            </p>
+          </div>
+          <img
+            src="./recursos/img/thrust_bypolea.svg"
+            class="thrust__logo"
+            alt="logo thrust_bypolea"
+          />
+          <div class="cotizacion__content">
+            <h2 class="title__cotizacion">COTIZACIÓN</h2>
+            <div class="fecha__content">
+              <p class="num__cotizacion">
+                N° <input type="text" id="ncot-recive" disabled="" />
+              </p>
+              <div class="fecha__recive">
+                <p class="fecha__cotizacion">
+                  Fecha:
+                  <input
+                    class="fechav__input"
+                    type="date"
+                    id="fecha-recive"
+                    disabled=""
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="quote-table"></div>
+        <div class="total__cotizacion" id="quote-total">
+          <h3>Total</h3>
+        </div>
+        <div class="html2pdf__page-break"></div>
+        <div class="politicas__container">
+          <h3>POLITICAS</h3>
+          <br />
+          <p>
+            Para poder iniciar una relación comercial con Thrust, se requiere el
+            pago de la primera quincena de trabajo por adelantado. Asimismo, se
+            informa a nuestros clientes que para finalizar la relación comercial
+            se debe dar un aviso de al menos quince días de antelación. En caso
+            de no hacerlo, se entenderá que se desea continuar con los servicios
+            previamente contratados, por lo que se deberá realizar el pago
+            correspondiente al periodo trabajado.
+          </p>
+          <br />
+          <p>
+            Con esta política, Thrust asegura que los clientes estén al tanto de
+            las condiciones para empezar a trabajar y de los plazos para
+            finalizar la relación comercial. Además, se establece que el pago
+            por adelantado es un requisito necesario para iniciar la
+            colaboración.
+          </p>
+          <br />
+          <p>
+            Una vez presentada la linea de contenido contará una ronda de
+            ajustes, a partir de la segunda se hara un cobro adicional de $500
+            mxn.
+          </p>
+          <br />
+          <p>
+            Adicionalmente es necesario contar con la vinculacion de redes
+            sociales Thrust no se hace responsable del retraso de publicaciones
+            por contratiempos ocasionados por el cliente.
+          </p>
+          <ul>
+            <li>Propuesta por marca.</li>
+            <li>El precio no incluye IVA</li>
+            <li>Factura + IVA</li>
+          </ul>
+          <div class="line__firma">
+            <div class="linea__firma"></div>
+            <div class="linea__firma"></div>
+          </div>
+          <div class="politicas__firma">
+            <div class="firmas">
+              <p class="content__firma">kevin ali inzunza santos</p>
+              <p class="empresa__foot">thrust</p>
+            </div>
+            <div class="firmas-2">
+              <input
+                type="text"
+                class="content__firma"
+                name="firma-representante"
+                id="firma-representante"
+                disabled=""
+              />
+              <input
+                type="text"
+                name="firma-client"
+                id="firma-client"
+                disabled=""
+              />
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <script src="./cotizacion.js"></script>
+  </body>
+</html>
