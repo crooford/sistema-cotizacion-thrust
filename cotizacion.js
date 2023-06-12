@@ -1,6 +1,7 @@
 const descargaBtn = document.getElementById("btn__descargar");
 const pageBreak = document.getElementById('page-break');
 const quoteTotal = document.getElementById('quote-total');
+const volverBtn = document.getElementById('btn__volver');
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const quoteData = urlParams.get("data");
@@ -128,4 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .save()
       .catch((err) => console.log(err));
   });
+});
+
+volverBtn.addEventListener("click",()=>{
+  window.location.href = "index.html";
 });
