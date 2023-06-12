@@ -1,8 +1,10 @@
+/* reseteo de bordes y paddings */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* paleta de colores */
 :root {
   --first: #262c60;
   --second: #5361aa;
@@ -10,37 +12,59 @@
   --fourth: #df495e;
   --fifth: #f6ba47;
 }
+/* estilos generales y fuente */
 body {
   background: #ffffff;
   font-family: "Poppins", sans-serif;
   margin: 20px;
 }
 
+/* encabezado de la cotizacion */
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 5.5px 0px 5.5px;
 }
+/* estilos para div de contenedor para cliente y vigencia */
 .client__content {
+  padding-top: 10px;
   color: var(--first);
   font-size: 17px;
+
 }
+.cliente-name{
+  display: flex;
+  text-transform: capitalize;
+}
+.client__info{
+  margin-right: 4px;
+}
+.vigencia-cot{
+  display: flex;
+  text-transform: capitalize;
+  margin-top: 1px;
+}
+.vigencia__info{
+  margin-right: 4px;
+}
+/* tamaño logo */
 .thrust__logo {
   max-width: 13rem;
 }
-
+/* estilos para titulo cotizacion*/
 .title__cotizacion {
   color: var(--first);
   display: flex;
   font-size: 30px;
   letter-spacing: 2px;
 }
-
+/* alineacion del contenedor de cotizacion */
 .cotizacion__content h2 {
   justify-content: right;
-  margin-right: 3px;
+  
 }
+/* contenedor de numero cotizacion y fecha de creación */
 .fecha__content {
   display: flex;
   align-items: right;
@@ -48,28 +72,11 @@ body {
   margin-left: 8px;
   color: var(--first);
 }
-.client__content input {
-  border: none;
-  max-width: 150px;
-  font-size: medium;
-  color: var(--first);
-  letter-spacing: 1px;
-  background-color: transparent;
+.num__cotizacion{
+  padding-right: 15px;
 }
-.fechav__input[type="date"] {
-  font-size: large;
-  max-width: 108px;
-}
-.fechav__input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-}
-.fecha__content input {
-  max-width: 50px;
-  font-size: medium;
-  color: var(--first);
-  letter-spacing: 1px;
-  border: none;
-  background-color: transparent;
+.fecha__cotizacion{
+  margin-right: 5px;
 }
 .service-price {
   font-weight: normal;
@@ -140,6 +147,9 @@ body {
   color: var(--third);
   padding: 0.5rem 1.5rem 0.5rem 1rem;
 }
+.total-price{
+  font-weight: normal;
+}
 .container__btn__descargar {
   display: flex;
   align-items:center;
@@ -186,8 +196,11 @@ body {
 .politicas__container h3 {
   text-align: center;
 }
+.politicas__container p{
+  text-align: justify;
+}
 .politicas__container ul {
-  list-style: square;
+  
   margin-left: 20px;
   font-weight: bold;
 }
@@ -196,8 +209,7 @@ body {
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
-  height: 40px;
-  padding: 0 40px;
+  height: 65px;
 }
 .line__firma {
   display: flex;
@@ -205,21 +217,29 @@ body {
 }
 .linea__firma {
   border-bottom: solid;
-
   width: 390px;
-  margin-top: 20px;
+  margin-top: 80px;
   height: 32px;
-  margin-bottom: 5px;
 }
 .firmas {
+  margin-top: 5px;
+  width: 400px;
+  display: grid;
+  justify-items: center;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .firmas-2 {
+  margin-top: 5px;
+  width: 400px;
   display: grid;
+  justify-items: center;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  padding-right: 40px;
+  padding-left: 40px;
 }
+
 .content__firma {
   font-size: larger !important;
   font-weight: bold;
@@ -231,12 +251,4 @@ body {
   text-align: center;
   color: var(--first);
 }
-.firmas-2 input {
-  background-color: transparent;
-  border: none;
-  font-size: medium;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--first);
-  padding: 0;
-}
+

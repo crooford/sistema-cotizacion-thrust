@@ -30,18 +30,18 @@
       <section class="section__cotizacion row-1 ocult" id="section-cot">
         <div class="header__container">
           <div class="client__content">
-            <p class="client__info">
-              Cliente: <input type="text" id="cliente-recive" disabled="" />
-            </p>
-            <p class="vigencia__info">
-              Vigencia:
-              <input
-                class="fechav__input"
-                type="date"
-                id="fechav-recive"
-                disabled=""
-              />
-            </p>
+            <div class="cliente-name">
+              <p class="client__info">
+                Cliente: 
+              </p>
+              <p id="cliente-recive" ></p>
+            </div>
+            <div class="vigencia-cot">
+              <p class="vigencia__info">
+                Vigencia:
+              </p>
+              <p class="fechav__input" id="fechav-recive"></p>
+            </div>
           </div>
           <img
             src="./recursos/img/thrust_bypolea.svg"
@@ -51,19 +51,13 @@
           <div class="cotizacion__content">
             <h2 class="title__cotizacion">COTIZACIÓN</h2>
             <div class="fecha__content">
-              <p class="num__cotizacion">
-                N° <input type="text" id="ncot-recive" disabled="" />
+              <p>
+                N°
               </p>
+              <p class="num__cotizacion" id="ncot-recive"></p>
               <div class="fecha__recive">
-                <p class="fecha__cotizacion">
-                  Fecha:
-                  <input
-                    class="fechav__input"
-                    type="date"
-                    id="fecha-recive"
-                    disabled=""
-                  />
-                </p>
+                <p class="fecha__cotizacion">Fecha: </p>
+                <p class="fechav__input" id="fecha-recive"></p>
               </div>
             </div>
           </div>
@@ -72,7 +66,7 @@
         <div class="total__cotizacion" id="quote-total">
           <h3>Total</h3>
         </div>
-        <div class="html2pdf__page-break"></div>
+        <div class="html2pdf__page-break" id="page-break"></div>
         <div class="politicas__container">
           <h3>POLITICAS</h3>
           <br />
@@ -85,7 +79,7 @@
             previamente contratados, por lo que se deberá realizar el pago
             correspondiente al periodo trabajado.
           </p>
-          <br />
+          <br/>
           <p>
             Con esta política, Thrust asegura que los clientes estén al tanto de
             las condiciones para empezar a trabajar y de los plazos para
@@ -93,13 +87,13 @@
             por adelantado es un requisito necesario para iniciar la
             colaboración.
           </p>
-          <br />
+          <br/>
           <p>
             Una vez presentada la linea de contenido contará una ronda de
             ajustes, a partir de la segunda se hara un cobro adicional de $500
             mxn.
           </p>
-          <br />
+          <br/>
           <p>
             Adicionalmente es necesario contar con la vinculacion de redes
             sociales Thrust no se hace responsable del retraso de publicaciones
@@ -120,19 +114,8 @@
               <p class="empresa__foot">thrust</p>
             </div>
             <div class="firmas-2">
-              <input
-                type="text"
-                class="content__firma"
-                name="firma-representante"
-                id="firma-representante"
-                disabled=""
-              />
-              <input
-                type="text"
-                name="firma-client"
-                id="firma-client"
-                disabled=""
-              />
+              <p class="content__firma" id="firma-representante"></p>
+              <p  class="empresa__foot" id="firma-client"></p>
             </div>
           </div>
         </div>

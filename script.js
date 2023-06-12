@@ -34,12 +34,12 @@ fetch("informacion.json")
 // Evento al hacer clic en el botón "Agregar"
 addServiceBtn.addEventListener("click", () => {
   const selectedService = servicesSelect.value;
-
+  // Condicion para evitar agregar nada a los servicios seleccionados
   if (selectedService === "") {
     alert("Por favor, seleccione un servicio válido.");
     return;
   }
-
+  // Condicion para evitar seleccionar el mismo servicio 2 veces
   const serviceExists = selectedServices.some(
     (service) => service.servicio === selectedService
   );
@@ -47,7 +47,7 @@ addServiceBtn.addEventListener("click", () => {
     alert("El servicio seleccionado ya ha sido agregado.");
     return;
   }
-
+  // añadir servicios a la seccion de servicios seleccionados
   const service = availableServices.find((s) => s.servicio === selectedService);
   if (service) {
     selectedServices.push(service);

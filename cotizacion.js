@@ -1,5 +1,6 @@
 const descargaBtn = document.getElementById("btn__descargar");
-
+const pageBreak = document.getElementById('page-break');
+const quoteTotal = document.getElementById('quote-total');
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const quoteData = urlParams.get("data");
@@ -7,23 +8,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const quoteTable = document.getElementById("quote-table");
   let servicesSelected = quote.selectedServices;
   if (quote) {
-    document.getElementById("ncot-recive").value = quote.informacionCot[0];
-    document.getElementById("cliente-recive").value = quote.informacionCot[1];
-    document.getElementById("firma-representante").value = quote.informacionCot[2];
-    document.getElementById("fecha-recive").value = quote.informacionCot[3];
-    document.getElementById("fechav-recive").value = quote.informacionCot[4];
-    document.getElementById("firma-client").value = quote.informacionCot[1];
-
-    // Obtener referencia al elemento de la tabla
-
+    document.getElementById("ncot-recive").textContent = quote.informacionCot[0];
+    document.getElementById("cliente-recive").textContent = quote.informacionCot[1];
+    document.getElementById("firma-representante").textContent = quote.informacionCot[2];
+    document.getElementById("fecha-recive").textContent = quote.informacionCot[3];
+    document.getElementById("fechav-recive").textContent = quote.informacionCot[4];
+    document.getElementById("firma-client").textContent = quote.informacionCot[1];
+    var total = 0;
     // Generar la tabla con los servicios seleccionados
     const selectedItem = document.createElement("div");
     selectedItem.classList.add("selected-item-group");
+    if(servicesSelected.length <= 1){
+      pageBreak.classList.remove('html2pdf__page-break');
+    };
     for(let i=0; i < servicesSelected.length; i++){
         
         let service = servicesSelected[i];
-        console.log(service)
-      
+        total += service.precio;
         // primera linea de la cotizacion
         const serviceSelect = document.createElement("div");
         serviceSelect.classList.add("service-select");
@@ -95,8 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         selectedItem.appendChild(entregableList);
       };
+      const totalPrice = document.createElement("h3");
+      totalPrice.classList.add("total-price");
+      totalPrice.textContent = `$${total} MXN`;
+      quoteTotal.appendChild(totalPrice);
       quoteTable.appendChild(selectedItem);
-    }
+    };
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -104,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var element = document.getElementById('section-cot');
     html2pdf()
       .set({
-        margin: [10, 0, 0, 0],
+        margin: [20, 0,0, 0],
         filename: "cotizacion.pdf",
         image: {
           type: "jpeg",
